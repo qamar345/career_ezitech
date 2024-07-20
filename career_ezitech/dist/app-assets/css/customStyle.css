@@ -1,0 +1,7 @@
+.bg-information {
+    background-image: url("../images/banner/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}

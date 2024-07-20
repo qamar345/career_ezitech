@@ -113,7 +113,7 @@ export const Register = () => {
         // https://api.ezitech.org/register-inters
 
         axios
-          .post("http://localhost:8801/apply-now", { value })
+          .post("https://api.career.ezitech.org/apply-now", { value })
           .then((res) => {
             console.log(res.data);
 
