@@ -1,0 +1,75 @@
+.PhoneInputInput {
+    flex: 1 1;
+    min-width: 0;
+    border: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+
+/* ------------------ */
+/* File: styles.css */
+
+.custom-calendar-container {
+    margin: 20px;
+}
+
+.custom-calendar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.react-calendar {
+    border: 0;
+}
+
+.custom-calendar .react-calendar__tile {
+    font-size: 25px;
+
+}
+
+.custom-calendar .react-calendar__tile--active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.react-calendar__tile--now {
+    background-color: #006edc;
+    color: white;
+    font-weight: bold;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background-color: #006edc;
+    color: white;
+    font-weight: bold;
+}
+
+/* --------------------------- */
+
+.rules {
+    border: 1px solid gainsboro;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+    overflow-y: scroll;
+    height: 310px;
+}
+
+.time-picker {
+    border: 1px solid gainsboro;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+/* Information Page */
+/* .bg-information{
+    background-image: url('../../../app-assets/images/banner/banner.png');
+} */
