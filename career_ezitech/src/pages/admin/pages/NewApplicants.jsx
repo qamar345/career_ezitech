@@ -27,7 +27,6 @@ export const NewApplicants = () => {
   };
 
   const GetSingle = (id) => {
-    alert(id);
     navigate(`/profile-view/${id}`);
   };
 

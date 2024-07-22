@@ -27,7 +27,6 @@ export const AdminDashboard = () => {
   };
 
   const GetSingle = (id) => {
-    alert(id);
     navigate(`/profile-view/${id}`);
   };
 
