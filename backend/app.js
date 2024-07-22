@@ -6,6 +6,9 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
 const PORT = process.env.PORT;
 
+app.use(express.static('dist'));
+
+
 const app = express();
 app.use(bodyParser.json({ limit: "35mb" })); // Adjust the limit as needed
 app.use(bodyParser.urlencoded({ limit: "35mb", extended: true }));
