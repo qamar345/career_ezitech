@@ -99,12 +99,8 @@ export const Register = () => {
   const RegisterCandidate = (e) => {
     e.preventDefault();
     setValue({ ...value, candidatePhone: tel });
-    const id = Math.floor(1000 + Math.random() * 9000);
-    let ETI_ID = "ETI-CAREER" + "-" + id;
 
     if (value.candidatePhone !== " ") {
-      setValue({ ...value, ETIID: ETI_ID });
-
       if (
         value.candidateGender !== undefined &&
         value.candidateUniversity !== undefined &&

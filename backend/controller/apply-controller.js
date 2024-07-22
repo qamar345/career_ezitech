@@ -2,8 +2,10 @@ const { SendMessage } = require("../api/whatsapp-api");
 const { connection } = require("../config/connection");
 
 const ApplyNow = (req, res) => {
+  const id = Math.floor(1000 + Math.random() * 9000);
+  let ETI_ID = "ETI-CAREER" + "-" + id;
+
   const {
-    ETIID,
     candidateFullname,
     candidateEmail,
     candidatePhone,
@@ -20,7 +22,7 @@ const ApplyNow = (req, res) => {
   } = req.body.value;
 
   let candidatedata = [
-    ETIID,
+    ETI_ID,
     candidateFullname,
     candidateEmail,
     candidatePhone,
