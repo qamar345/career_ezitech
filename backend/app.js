@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
 const PORT = process.env.PORT;
 
-app.use(express.static('dist'));
+// app.use(express.static('dist'));
 
 
 const app = express();
