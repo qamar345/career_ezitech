@@ -1,15 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
 export const AdminTopbar = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const Logout = () => {
-        sessionStorage.clear();
-        alert("Logout Successfully!!!")
-        navigate("/admin")
-    }
+  const Logout = () => {
+    sessionStorage.clear();
+    alert("Logout Successfully!!!");
+    navigate("/admin-login");
+  };
   return (
     <>
       <nav className="navbar navbar-expand px-3 border-bottom">
@@ -36,7 +35,9 @@ export const AdminTopbar = () => {
               </p>
             </li>
             <div className="logout">
-                <button className="btn btn-danger" onClick={Logout}>Logout</button>
+              <button className="btn btn-danger" onClick={Logout}>
+                Logout
+              </button>
             </div>
           </ul>
         </div>

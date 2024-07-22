@@ -14,7 +14,7 @@ function App() {
           <Route index path="/" element={<Register />} />
 
           {/* Admin */}
-          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/new-applicants" element={<NewApplicants />} />
           <Route path="/profile-view/:id" element={<ProfileView />} />

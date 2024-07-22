@@ -12,7 +12,7 @@ export const NewApplicants = () => {
   const [token, setToken] = useState(sessionStorage.getItem("token"));
 
   if (!checkLoggedIn) {
-    navigate("/admin");
+    navigate("/admin-login");
   }
 
   const GetAllApplicants = async () => {

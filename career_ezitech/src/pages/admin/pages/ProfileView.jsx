@@ -12,7 +12,7 @@ export const ProfileView = () => {
   const [token, setToken] = useState(sessionStorage.getItem("token"));
 
   if (!checkLoggedIn) {
-    navigate("/admin");
+    navigate("/admin-login");
   }
 
   const GetSingle = async () => {
