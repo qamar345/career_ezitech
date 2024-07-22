@@ -25,7 +25,7 @@ html .content {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   min-height: calc(100% - 3.35rem);
-  margin-left: 260px;
+  /* margin-left: 260px; */
 }
 
 html .content.app-content {

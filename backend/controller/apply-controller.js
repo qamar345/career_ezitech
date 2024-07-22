@@ -3,6 +3,7 @@ const { connection } = require("../config/connection");
 
 const ApplyNow = (req, res) => {
   const {
+    ETIID,
     candidateFullname,
     candidateEmail,
     candidatePhone,
@@ -19,6 +20,7 @@ const ApplyNow = (req, res) => {
   } = req.body.value;
 
   let candidatedata = [
+    ETIID,
     candidateFullname,
     candidateEmail,
     candidatePhone,
@@ -52,7 +54,7 @@ const ApplyNow = (req, res) => {
 
       if (flag === 0) {
         const sql1 =
-          "INSERT INTO `candidate_table` (`name`, `email`, `phone`, `cnic`, `gender`, `image`, `join_date`, `birth_date`, `university`, `degree`, `technology`, `duration`, `previous_work`) VALUES (?)";
+          "INSERT INTO `candidate_table` (`eti_id`, `name`, `email`, `phone`, `cnic`, `gender`, `image`, `join_date`, `birth_date`, `university`, `degree`, `technology`, `duration`, `previous_work`) VALUES (?)";
 
         connection.query(sql1, [candidatedata], (err, data) => {
           if (err) {

@@ -101,6 +101,9 @@ export const Register = () => {
     setValue({ ...value, candidatePhone: tel });
 
     if (value.candidatePhone !== " ") {
+      const id = Math.floor(1000 + Math.random() * 9000);
+      let ETI_ID = "ETI-CAREER" + "-" + id;
+      setValue({ ...value, ETIID: ETI_ID });
       if (
         value.candidateGender !== undefined &&
         value.candidateUniversity !== undefined &&
@@ -110,7 +113,7 @@ export const Register = () => {
         value.contractDuration !== undefined
       ) {
         setLoader(true);
-        // https://api.ezitech.org/register-inters
+        // https://api.career.ezitech.org/apply-now
 
         axios
           .post("https://api.career.ezitech.org/apply-now", { value })
