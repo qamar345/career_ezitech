@@ -36,7 +36,7 @@ const ApplyNow = (req, res) => {
     previousWork,
   ];
 
-  console.log(candidatedata);
+  // console.log(candidatedata);
 
   const sql0 = "SELECT * FROM `candidate_table` WHERE `email`= (?)";
   connection.query(sql0, [candidateEmail], (err, data) => {
