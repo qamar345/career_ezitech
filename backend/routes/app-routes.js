@@ -3,6 +3,7 @@ const { ApplyNow } = require("../controller/apply-controller");
 const {
   GetLatestApplicants,
   GetSingleApplicant,
+  GetAllApplicants,
 } = require("../controller/get-applicant");
 const { AdminAuth } = require("../controller/admin-auth");
 const jwt = require("jsonwebtoken");
@@ -37,7 +38,7 @@ router.post("/apply-now", ApplyNow);
 // Admin
 router.post("/admin-auth", AdminAuth);
 router.get("/get-latest", verifyToken, GetLatestApplicants);
-router.get("/get-all-applicants", verifyToken, GetLatestApplicants);
+router.get("/get-all-applicants", verifyToken, GetAllApplicants);
 router.get("/get-single-applicant/:id", verifyToken, GetSingleApplicant);
 
 module.exports = router;
